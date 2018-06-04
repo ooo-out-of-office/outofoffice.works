@@ -24,8 +24,8 @@ body {
 
 h1 {
   color: var(--background-color);
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+  text-shadow: -1px -1px 0 var(--color), 1px -1px 0 var(--color),
+    -1px 1px 0 var(--color), 1px 1px 0 var(--color);
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
