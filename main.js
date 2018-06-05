@@ -1,10 +1,10 @@
 (function() {
   var date = new Date();
-  var hours = date.getHours();
   var body = document.body;
   var windowWidth = window.innerWidth;
   var windowHeight = window.innerHeight;
-  var hue = hours * 15;
+  var saturation = 50;
+  var lightness = 50;
 
   function throttle(fn, threshhold, scope) {
     threshhold || (threshhold = 250);
@@ -30,6 +30,8 @@
   }
 
   var updateColors = function(saturation, lightness) {
+    var hue = (date.getHours() + date.getMinutes() / 60) * 15;
+
     body.style.setProperty(
       "--background-color",
       `hsl(${hue}, ${saturation}%, ${lightness}%)`
@@ -39,13 +41,15 @@
   };
 
   var detectMouseMove = function(mouseEvent) {
-    var saturation = parseInt(mouseEvent.clientX / windowWidth * 100, 10);
-    var lightness = parseInt(mouseEvent.clientY / windowHeight * 100, 10);
+    saturation = parseInt((mouseEvent.clientX / windowWidth) * 100, 10);
+    lightness = parseInt((mouseEvent.clientY / windowHeight) * 100, 10);
 
     updateColors(saturation, lightness);
   };
 
-  updateColors("50", "50");
+  updateColors(saturation, lightness);
+
+  window.setInterval(updateColors, 10000, saturation, lightness);
 
   document.addEventListener("mousemove", throttle(detectMouseMove, 30));
 })();
