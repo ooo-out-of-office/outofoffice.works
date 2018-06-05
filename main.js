@@ -6,7 +6,7 @@
   var saturation = 50;
   var lightness = 50;
 
-  function throttle(fn, threshhold, scope) {
+  var throttle = function(fn, threshhold, scope) {
     threshhold || (threshhold = 250);
     var last, deferTimer;
 
@@ -27,7 +27,7 @@
         fn.apply(context, args);
       }
     };
-  }
+  };
 
   var updateColors = function(saturation, lightness) {
     var hue = (date.getHours() + date.getMinutes() / 60) * 15;
