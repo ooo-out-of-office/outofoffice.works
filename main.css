@@ -36,9 +36,24 @@ h1 {
   display: grid;
   grid-template-columns: repeat(5, minmax(10px, 24vw));
   grid-template-rows: repeat(5, minmax(10px, 24vw));
-  width: 600px;
-  height: 600px;
+  width: 75vw;
+  height: 75vw;
 }
+
+@media screen and (min-width: 768px) {
+  .grid {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid {
+    width: 800px;
+    height: 800px;
+  }
+}
+
 
 .circle {
   width: 100%;
