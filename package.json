@@ -1,0 +1,14 @@
+{
+  "name": "outofoffice.works",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ooo-out-of-office/outofoffice.works.git",
+  "author": "Zack Seuberling <zack.seuberling@leafly.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  },
+  "scripts": {
+    "start": "yarn http-server"
+  }
+}
