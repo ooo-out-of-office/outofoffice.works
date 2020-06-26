@@ -17,6 +17,10 @@ body {
   color: #fff;
 }
 
+a {
+  color: currentColor;
+}
+
 h1 {
   letter-spacing: 0.1em;
   margin: 0;
