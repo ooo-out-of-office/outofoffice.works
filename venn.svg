@@ -5,7 +5,7 @@
     }
   </style>
 
-  <circle cx="133" cy="133" r="25" fill="rgb(0,0,255)" />
-  <circle cx="166" cy="133" r="25" fill="rgb(0,255,0)"/>
-  <circle cx="149.5" cy="166" r="25" fill="rgb(255,0,0)"  />
+  <circle cx="33" cy="33" r="25" fill="rgb(0,0,255)" />
+  <circle cx="66" cy="33" r="25" fill="rgb(0,255,0)"/>
+  <circle cx="49.5" cy="66" r="25" fill="rgb(255,0,0)" />
 </svg>
