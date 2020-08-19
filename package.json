@@ -6,9 +6,24 @@
   "author": "Zack Seuberling <zack.seuberling@leafly.com>",
   "license": "MIT",
   "devDependencies": {
-    "http-server": "^0.11.1"
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.2",
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "3.2.0",
+    "http-server": "^0.12.3",
+    "husky": "^4.2.5"
   },
   "scripts": {
-    "start": "yarn http-server"
+    "start": "http-server"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
