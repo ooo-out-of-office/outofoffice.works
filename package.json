@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:ooo-out-of-office/outofoffice.works.git",
-  "author": "Zack Seuberling <zack.seuberling@leafly.com>",
+  "author": "Zack Seuberling <zack@zackseuberling.com>",
   "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^9.1.2",
