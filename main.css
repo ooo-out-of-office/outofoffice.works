@@ -26,7 +26,8 @@ a {
 }
 
 h1 {
-  letter-spacing: 0.1em;
+  font-size: 3rem;
+  letter-spacing: 0.025em;
   margin: 0;
   text-transform: uppercase;
 }
